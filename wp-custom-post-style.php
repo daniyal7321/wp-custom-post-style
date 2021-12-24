@@ -8,7 +8,7 @@
  * Text Domain:       wp-custom-post-style
  */
 
-require_once MY_THEME_DIR.'register-post-type.php';
+require_once 'register-post-type.php';
 
 function add_my_custom_page() {
     // Create post object
