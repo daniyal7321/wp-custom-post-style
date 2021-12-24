@@ -18,8 +18,6 @@ function add_my_custom_page() {
       'post_status'   => 'publish',
       'post_type'     => 'page',
     );
-
-    // Insert the post into the database
     wp_insert_post( $my_post );
 }
 
