@@ -9,12 +9,12 @@
  */
 
 require_once 'register-post-type.php';
-
+a
 function add_my_custom_page() {
     // Create post object
     $my_post = array(
       'post_title'    => wp_strip_all_tags( 'My Custom Page' ),
-      'post_content'  => '<h3>New Page</h3>',
+      'post_content'  => '<h3>New Page 1</h3>',
       'post_status'   => 'publish',
       'post_type'     => 'page',
     );
