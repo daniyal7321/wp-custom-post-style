@@ -31,8 +31,6 @@ function on_deactivating_your_plugin() {
 }
 register_deactivation_hook( __FILE__, 'on_deactivating_your_plugin' );
 
-
-
 function pluginprefix_setup_post_type() {
     register_post_type( 'book', ['public' => true ] ); 
 } 
