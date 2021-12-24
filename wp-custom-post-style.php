@@ -8,7 +8,7 @@
  * Text Domain:       wp-custom-post-style
  */
 
-// Register Post Type
+
 
 function add_my_custom_page() {
     // Create post object
@@ -30,7 +30,7 @@ function on_deactivating_your_plugin() {
 
 }
 register_deactivation_hook( __FILE__, 'on_deactivating_your_plugin' );
-
+// Register Post Type
 function pluginprefix_setup_post_type() {
     register_post_type( 'book', ['public' => true ] ); 
 } 
