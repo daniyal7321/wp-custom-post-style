@@ -14,7 +14,7 @@ function add_my_custom_page() {
     // Create post object
     $my_post = array(
       'post_title'    => wp_strip_all_tags( 'My Custom Page' ),
-      'post_content'  => '<h2>Hello World</h2>',
+      'post_content'  => '<h3>Hello World</h3>',
       'post_status'   => 'publish',
       'post_type'     => 'page',
     );
