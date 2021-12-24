@@ -9,3 +9,5 @@
  */
 
 require_once 'register-post-type.php';
+
+require_once 'add-custom-page.php';
