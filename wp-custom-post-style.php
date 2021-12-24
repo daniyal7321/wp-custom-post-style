@@ -24,9 +24,7 @@ function add_my_custom_page() {
 register_activation_hook(__FILE__, 'add_my_custom_page');
 
 function on_deactivating_your_plugin() {
-
     $page = get_page_by_path( 'My Custom Page' );
     wp_delete_post($page->ID);
-
 }
 register_deactivation_hook( __FILE__, 'on_deactivating_your_plugin' );
