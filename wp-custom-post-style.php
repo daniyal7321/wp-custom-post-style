@@ -36,14 +36,14 @@ function pluginprefix_setup_post_type() {
 } 
 add_action( 'init', 'pluginprefix_setup_post_type' );
 // Plugin Activation
-function pluginprefix_activate() {
+function wp_custom_post_style_activate() {
     pluginprefix_setup_post_type();
     flush_rewrite_rules(); 
 }
-register_activation_hook( 'wp-custom-post-style', 'pluginprefix_activate' );
+register_activation_hook( 'wp-custom-post-style', 'wp_custom_post_style_activate' );
 // Plugin Deactivation
-function pluginprefix_deactivate() {
+function wp_custom_post_style_deactivate() {
     unregister_post_type( 'book' );
     flush_rewrite_rules();
 }
-register_deactivation_hook( 'wp-custom-post-style', 'pluginprefix_deactivate' );
+register_deactivation_hook( 'wp-custom-post-style', 'wp_custom_post_style_deactivate' );
